@@ -13,7 +13,7 @@ data("data_heatwaves")
 heat <- ggplot(data= data_heatwaves,
                mapping = aes( x= year, y= temp_mean,
                               group = paste(fishery, eu_rnpa))) +
-  geom_point(color = "steelblue")
+  geom_point(color = "red")
 
 heat
 
@@ -29,7 +29,7 @@ data("data_lionfish")
 
 lionfishplot <- ggplot(data = data_lionfish,
                        mapping = aes(x = site, y = total_length_mm))+
-  geom_point(color= "red")
+  geom_point(color= "black")
 
 lionfishplot
 
